@@ -1,0 +1,70 @@
+body {
+  margin: 50px;
+  background: url("../images/bodybg2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font: outline;
+  font-style: normal;
+  background-color: floralwhite;
+  border: 5px solid white;
+  border-radius: 10px;
+}
+.bor{
+    border: 2px solid red;
+}
+html {
+  background: url("../images/bgimage.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.text1{
+    color:white;
+    font-size: 6rem;
+    text-align: center;
+}
+
+.text2{
+    color: black;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.text3{
+    color: #55060c;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.displayimage{
+    display: inline;
+}
+
+img {
+    border: 2px solid black;
+    border-radius: 10px;
+    width:250px;
+    height: 200px;
+}
+
+.bgopac{
+    background-color: whitesmoke;
+    opacity: 0.8;
+    border: 1px solid black;
+    /* border-radius: 10px; */
+    padding:5px;
+}
+
+/* margin correction for all elements */
+.newMarg{
+    margin: 50px;
+}
+
+/* .lmarg{
+   
+    margin-left:5px;
+} */

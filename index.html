@@ -13,7 +13,7 @@
         content="ie=edge"
     ></meta>
 
-    <title>Document</title>
+    <title>CrystalsCollector</title>
 
     <link
         rel="stylesheet"
@@ -24,7 +24,7 @@
 
     <link
         rel="stylesheet"
-        href="css/style.css"
+        href="assets/css/style.css"
     ></link>
 
     <script
@@ -35,6 +35,128 @@
 </head>
 
 <body>
-    <script src="javascript.game.js"></script>
+    <div class="container">
+        <header
+            id="header"
+            class="row"
+        >
+            <h1 class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text1">CrystalsCollector!</h1>
+        </header>
+
+        <section class="row" id="mainSection">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="row">
+                    <h2 class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text2 bgopac">Instructions:</h2>
+
+                    <h2 class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text2 bgopac">GameBoard:</h2>
+
+                    </div><!--****************************** end row 1 -->
+
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 bgopac">
+                            <p
+                                class="instructions"
+                                id="instructions"
+                            >
+                                <ol class="text3">
+                                    <li>
+                                        A new number will appear at the start of the game
+                                    </li>
+
+                                    <li>
+                                        Each of the four crystal pictures below will have a different value assigned randomly.
+                                        By clicking on the crystal, you will add points to your total score.
+                                    </li>
+
+                                    <li>
+                                        The object of the game is to click the crystals as many times as it takes to match the
+                                        number to your total score. If you go over...you lose!
+                                    </li>
+
+                                    <li>
+                                        The value of the crystal will be revealed to you when you click on it, keeping that same
+                                        value throughout the game. It is important to remember how much your total score
+                                        changed!
+                                    </li>
+
+                                    <li>
+                                        Each time a new game is started, the Crystal changes it's value!
+                                    </li>
+                                </ol>
+                            </p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-md-6 bgopac">
+                                    <h2
+                                        id="targetScore"
+                                        class="text2"
+                                    >Target Score:  </h2>
+
+                                    <br>
+                                </div>
+
+                                <div class="col-md-6 bgopac">
+                                    <h2
+                                        class="text2"
+                                        id="totalScore"
+                                    >Total Score:  </h2>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- end row2 -->
+               
+            </div>
+        </section> <!-- *********************************end of main div -->
+
+        <div
+            class="row displayimage"
+            id="imagecontainer"
+        >
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="#" value= "">
+                    <img
+                        id="blue"
+                        src="assets/images/bluegem.jpg"
+                        alt="blue gem picture"
+                    >
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="#" value="">
+                    <img
+                        id="red"
+                        src="assets/images/redgem.jpg"
+                        alt="red gem picture"
+                    >
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="#" value= "">
+                    <img
+                        id="green"
+                        src="assets/images/greengem.jpg"
+                        alt="green gem picture"
+                    >
+                </a>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                <a href="#" value= "">
+                    <img
+                        id="lightblue"
+                        src="assets/images/lightbluegem.jpg"
+                        alt="light blue gem picture"
+                    >
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/javascript/game.js"></script>
 </body>
 </html>
