@@ -1,3 +1,11 @@
+html {
+  background: url("../images/bgimage.jpg")no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body {
   margin: 50px;
   background: url("../images/bodybg2.jpg") no-repeat center center fixed;
@@ -6,56 +14,121 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font: outline;
   font-style: normal;
   background-color: floralwhite;
   border: 5px solid white;
   border-radius: 10px;
+  padding:-60px;
 }
-.bor{
+
+#wrapper{
+    width:80%;
+    height:80%;
+    margin:auto;
+}
+
+button h1{
+    color:black;
+}
+
+/* this is for page creation troubleshooting only */
+.bor{ 
     border: 2px solid red;
 }
-html {
-  background: url("../images/bgimage.jpg")no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
+.brLeftup{ border-radius: 10px 0 0 0;}
+.brRightup{border-radius: 0 10px 0 0}
+.brLeftlow{border-radius: 0 0 0 10px }
+.brRightlow{border-radius: 0 0 10px 10px}
+
 .text1{
     color:white;
     font-size: 6rem;
     text-align: center;
+    font-family: 'Monoton', cursive;
 }
 
 .text2{
     color: black;
     font-size: 4rem;
     text-align: center;
+    max-width: 50%;
 }
 
 .text3{
     color: #55060c;
     font-size: 2rem;
     text-align: left;
+    font-size: 1.5rem;
 }
+
+/* .gameButton{
+    width: 170px;
+    height: 200px
+} */
 
 .displayimage{
     display: inline;
 }
 
-img {
-    border: 2px solid black;
-    border-radius: 10px;
-    width:250px;
+.colwidth{
+    max-width: 50%;
+    height:200px;
+}
+
+#gamevoice{
+    color:white;
+    text-align: center;
+    font-family: 'Monoton', cursive;
+
+}
+
+#bluegem{
+
+    background-image: url("../images/bluegem.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    /* width:270px;
     height: 200px;
+    background-size: contain; */
+    
+}
+
+#redgem{
+
+    background-image: url("../images/redgem.jpg");
+    width:270px;
+    height: 200px;
+    background-size: contain;
+}
+
+#greengem{
+
+    background-image: url("../images/greengem.jpg");
+    width:270px;
+    height: 200px;
+}
+
+#ltbluegem{
+
+    background-image: url("../images/lightbluegem.jpg");
+    width:270px;
+    height: 200px;
+}
+
+#imagecontainer{
+
+    margin-top: 100px;
+    margin-bottom: 100px;
+
 }
 
 .bgopac{
     background-color: whitesmoke;
     opacity: 0.8;
-    border: 1px solid black;
-    /* border-radius: 10px; */
     padding:5px;
 }
 
@@ -64,7 +137,98 @@ img {
     margin: 50px;
 }
 
-/* .lmarg{
-   
-    margin-left:5px;
-} */
+.myButton {
+    width: 100px;
+    height: 50px;
+    margin-top: 13px;
+    background-color:#d50d11;
+    color:whitesmoke
+}
+
+.height{
+
+    /* width:100%; */
+    height: 108.667px;
+}
+
+.height2{
+    height:307px;
+}
+
+btnHeight{
+    width:100%;
+    height:200px;
+}
+.invisible{
+    visibility: hidden;
+}
+
+#winDisplay{
+    color:whitesmoke;
+    font-family: 'Monoton', cursive;
+
+}
+#lossDisplay{
+    color:whitesmoke;
+    font-family: 'Monoton', cursive;
+
+}
+
+@media (min-width: 992px) {
+    .btn-responsive {
+      font-size:80%;
+      padding:8px 12px;
+     
+    }
+    #bluegem{
+
+        background-image: url("../images/bluegem.jpg");
+        background-repeat: no-repeat;
+        width:100%;
+        height: 150px;
+        background-size: contain;
+        
+    }
+    
+    #redgem{
+    
+        background-image: url("../images/redgem.jpg");
+        background-repeat: no-repeat;
+        width:100%;
+        height: 150px;
+        background-size: contain;
+    }
+    
+    #greengem{
+    
+        background-image: url("../images/greengem.jpg");
+        background-repeat: no-repeat;
+        width:100%;
+        height: 150px;
+        background-size: contain;
+    }
+    
+    #ltbluegem{
+    
+        background-image: url("../images/lightbluegem.jpg");
+        background-repeat: no-repeat;
+        width:100%;
+        height: 150px;
+        background-size: contain;
+    }
+  }
+  
+@media (max-width: 768px) {
+    .btn-responsive {
+      padding:2px 4px;
+      font-size:80%;
+      line-height: 1;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 992px) {
+    .btn-responsive {
+      padding:4px 9px;
+      font-size:90%;
+      line-height: 1.2;
+    }}

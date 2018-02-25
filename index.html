@@ -1,162 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8"></meta>
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    ></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
 
-    <meta
-        http-equiv="X-UA-Compatible"
-        content="ie=edge"
-    ></meta>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"></meta>
 
     <title>CrystalsCollector</title>
 
-    <link
-        rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous"
-    ></link>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-    <link
-        rel="stylesheet"
-        href="assets/css/style.css"
-    ></link>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous"></link>
 
-    <script
-        src="http://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="assets/css/style.css"></link>
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="container">
-        <header
-            id="header"
-            class="row"
-        >
-            <h1 class="col-md-12 col-lg-12 col-sm-12 col-xs-12 text1">CrystalsCollector!</h1>
+    <div id="wrapper" class="container">
+        <header id="header" class="row">
+            <h1 class="col-sm-12 col-xs-12 text1">CrystalsCollector!</h1>
         </header>
+        <!-- ******************************************************************************end header -->
 
         <section class="row" id="mainSection">
-            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+            <div id="gameTitle" class="col-sm-12 col-xs-12">
                 <div class="row">
-                    <h2 class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text2 bgopac">Instructions:</h2>
+                    <h2 class="col-sm-6 col-xs-6 text2 bgopac brLeftup">Instructions:</h2>
 
-                    <h2 class="col-md-6 col-lg-6 col-sm-6 col-xs-6 text2 bgopac">GameBoard:</h2>
+                    <h2 class="col-sm-6 col-xs-6 text2 bgopac brRightup">GameBoard:</h2>
 
-                    </div><!--****************************** end row 1 -->
+                </div>
+                <!--************************************************************************end row 1 -->
 
-                    <div class="row">
-                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 bgopac">
-                            <p
-                                class="instructions"
-                                id="instructions"
-                            >
-                                <ol class="text3">
-                                    <li>
-                                        A new number will appear at the start of the game
-                                    </li>
+                <div id="gameInstructions" class="row bgopac brRightlow">
+                    <div class="col-sm-6 col-xs-6 bgopac brLeftlow">
+                        <p class="instructions" id="instructions">
+                            <ol class="text3">
+                                <li>
+                                    A new number will appear at the start of the game
+                                </li>
 
-                                    <li>
-                                        Each of the four crystal pictures below will have a different value assigned randomly.
-                                        By clicking on the crystal, you will add points to your total score.
-                                    </li>
+                                <li>
+                                    Each of the four crystal pictures below will have a different value assigned randomly. By clicking on the crystal, you will
+                                    add points to your total score.
+                                </li>
 
-                                    <li>
-                                        The object of the game is to click the crystals as many times as it takes to match the
-                                        number to your total score. If you go over...you lose!
-                                    </li>
+                                <li>
+                                    The object of the game is to click the crystals as many times as it takes to match the number to your total score. If you
+                                    go over...you lose!
+                                </li>
 
-                                    <li>
-                                        The value of the crystal will be revealed to you when you click on it, keeping that same
-                                        value throughout the game. It is important to remember how much your total score
-                                        changed!
-                                    </li>
+                                <li>
+                                    The value of the crystal will be revealed to you when you click on it, keeping that same value throughout the game. It is
+                                    important to remember how much your total score changed!
+                                </li>
 
-                                    <li>
-                                        Each time a new game is started, the Crystal changes it's value!
-                                    </li>
-                                </ol>
-                            </p>
-                        </div>
+                                <li>
+                                    Each time a new game is started, the Crystal changes it's value!
+                                </li>
+                            </ol>
+                        </p>
+                    </div>
 
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-md-6 bgopac">
-                                    <h2
-                                        id="targetScore"
-                                        class="text2"
-                                    >Target Score:  </h2>
+                    <div class="col-sm-6 col-xs-6">
+                        <div id="gameOutput" class="row">
+                            <div class="col-sm-6 bgopac colwidth">
+                                <h2 id="targetScore" class="text2">Target Score: </h2>
 
-                                    <br>
-                                </div>
+                                <br>
+                            </div>
 
-                                <div class="col-md-6 bgopac">
-                                    <h2
-                                        class="text2"
-                                        id="totalScore"
-                                    >Total Score:  </h2>
-                                </div>
+                            <div class="col-sm-6 bgopac colwidth pull-right">
+                                <h2 class="text2" id="totalScore">Total Score: </h2>
                             </div>
                         </div>
+                        <div id "gamebuttons" class="row bgopac height brRightlow">
+                            <div class="col-sm-6 text-center">
 
-                    </div><!-- end row2 -->
-               
-            </div>
-        </section> <!-- *********************************end of main div -->
+                                <button type="button" id="btnStart" class="btn button-default myButton bgopac">Start Game</button>
 
-        <div
-            class="row displayimage"
-            id="imagecontainer"
-        >
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <a href="#" value= "">
-                    <img
-                        id="blue"
-                        src="assets/images/bluegem.jpg"
-                        alt="blue gem picture"
-                    >
-                </a>
-            </div>
+                            </div>
+                            <div class="col-sm-6 text-center">
 
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <a href="#" value="">
-                    <img
-                        id="red"
-                        src="assets/images/redgem.jpg"
-                        alt="red gem picture"
-                    >
-                </a>
-            </div>
+                                <button type="button" id="btnReset" class="btn button-default myButton bgopac">Reset Game</button>
+                            </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <a href="#" value= "">
-                    <img
-                        id="green"
-                        src="assets/images/greengem.jpg"
-                        alt="green gem picture"
-                    >
-                </a>
-            </div>
+                        </div>
+                    </div>
 
-            <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                <a href="#" value= "">
-                    <img
-                        id="lightblue"
-                        src="assets/images/lightbluegem.jpg"
-                        alt="light blue gem picture"
-                    >
-                </a>
+                </div>
+                <!--*********************************************************************************************** end row2  -->
+
             </div>
+        </section>
+        <!-- *****************************************************************************************************end of main div -->
+        <div class="row">
+
+            <h1 id="gamevoice" class=""></h1>
+
         </div>
+
+        <div class="row" id="imagecontainer">
+
+            <div class="col-xs-12 col-sm-6 col-md-3 ">
+
+                <button id="bluegem" value="" class="btn btn-default gameButton">
+                    <h1 class="invisible"></h1>
+                </button>
+
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <button id="redgem" value="" class="btn btn-default gameButton">
+                    <h1 class="invisible"></h1>
+                </button>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <button id="greengem" class="btn btn-default gameButton">
+                    <h1 class="invisible"></h1>
+                </button>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-3">
+
+                <button id="ltbluegem" class="btn btn-default gameButton">
+                    <h1 class="invisible"></h1>
+                </button>
+
+            </div>
+
+        </div>
+        <div class="row">
+
+            <h1 id="winDisplay"></h1>
+            <h1 id="lossDisplay"></h1>
+
+        </div>
+        
     </div>
+    <!--*********************************************************************************************** end of wrapper -->
 
     <script src="assets/javascript/game.js"></script>
 </body>
+
 </html>
