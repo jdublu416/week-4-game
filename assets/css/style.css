@@ -178,8 +178,16 @@ btnHeight{
     .btn-responsive {
       font-size:80%;
       padding:8px 12px;
+      margin-bottom: 10px;
      
     }
+    .text1{
+        color:white;
+        font-size: 6rem;
+        text-align: center;
+        font-family: 'Monoton', cursive;
+    }
+    
     #bluegem{
 
         background-image: url("../images/bluegem.jpg");
@@ -219,11 +227,57 @@ btnHeight{
   }
   
 @media (max-width: 768px) {
-    .btn-responsive {
-      padding:2px 4px;
-      font-size:80%;
-      line-height: 1;
+        .btn-responsive {
+        padding:2px 4px;
+        font-size:80%;
+        line-height: 1;
+        margin-bottom: 50px;
     }
+
+    .text1{
+        color:white;
+        font-size: 4rem;
+        text-align: center;
+        font-family: 'Monoton', cursive;
+    }
+    
+        
+        #bluegem{
+
+            background-image: url("../images/bluegem.jpg");
+            background-repeat: no-repeat;
+            width:100%;
+            height: 150px;
+            background-size: contain;
+            
+        }
+        
+        #redgem{
+        
+            background-image: url("../images/redgem.jpg");
+            background-repeat: no-repeat;
+            width:100%;
+            height: 150px;
+            background-size: contain;
+        }
+        
+        #greengem{
+        
+            background-image: url("../images/greengem.jpg");
+            background-repeat: no-repeat;
+            width:100%;
+            height: 150px;
+            background-size: contain;
+        }
+        
+        #ltbluegem{
+        
+            background-image: url("../images/lightbluegem.jpg");
+            background-repeat: no-repeat;
+            width:100%;
+            height: 150px;
+            background-size: contain;
+        }
   }
   
   @media (min-width: 769px) and (max-width: 992px) {
@@ -231,4 +285,41 @@ btnHeight{
       padding:4px 9px;
       font-size:90%;
       line-height: 1.2;
-    }}
+    }
+    #bluegem{
+
+        background-image: url("../images/bluegem.jpg");
+        background-repeat: no-repeat;
+        width:100%;
+        height: 150px;
+        background-size: contain;
+        
+    }
+    
+    #redgem{
+    
+        background-image: url("../images/redgem.jpg");
+        background-repeat: no-repeat;
+        width:100%;
+        height: 150px;
+        background-size: contain;
+    }
+    
+    #greengem{
+    
+        background-image: url("../images/greengem.jpg");
+        background-repeat: no-repeat;
+        width:100%;
+        height: 150px;
+        background-size: contain;
+    }
+    
+    #ltbluegem{
+    
+        background-image: url("../images/lightbluegem.jpg");
+        background-repeat: no-repeat;
+        width:100%;
+        height: 150px;
+        background-size: contain;
+    }
+}
